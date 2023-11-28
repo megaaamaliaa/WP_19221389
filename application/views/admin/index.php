@@ -53,7 +53,7 @@
 										$where);
  										echo $totaldipinjam;
  										?>
- 									/div>
+ 									</div>
  								</div>
  							<div class="col-auto">
  								<a href="<?= base_url('user'); ?>"><i class="fas fa-user-tag fa-3x text-success"></i></a>
