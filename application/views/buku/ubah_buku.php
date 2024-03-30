@@ -10,7 +10,7 @@
             <?php } ?>
             <?= $this->session->flashdata('pesan'); ?>
             <?php foreach ($buku as $b) { ?>
-                <form action="<?= base_url('buku/ubahBuku'); ?>" method="post" enctype="multipart/form-data">
+                <form action="<?= base_url("buku/ubahBuku"); ?>" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <input type="hidden" name="id" id="id" value="<?php echo $b['id']; ?>">
                         <input type="text" class="form-control form-control-user" id="judul_buku" name="judul_buku" placeholder="Masukkan Judul Buku" value="<?= $b['judul_buku']; ?>">
@@ -53,7 +53,7 @@
 
                             <picture>
                                 <source srcset="" type="image/svg+xml">
-                                <img src="<?= base_url('assets/img/upload/') . $b['image']; ?>" class="rounded mx-auto mb-3 d-blok" alt="...">
+                                <img src="<?= base_url('assets/img/upload/') . $b['image']; ?>" class="rounded mx-auto mb-3 d-blok" alt="..." width="20%">
                             </picture>
 
                         <?php } ?>
